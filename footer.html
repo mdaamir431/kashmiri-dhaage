@@ -1,0 +1,40 @@
+<footer style="background:#fdf4e6; padding:40px 20px; text-align:center; font-family:'Poppins', sans-serif; color:#4b3f2f;">
+
+
+  <!-- Social Links with Icons -->
+  <div class="social-icons" style="margin-bottom:20px; display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+    <a href="https://instagram.com/kashmiridhaageofficial" target="_blank" style="text-decoration:none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" style="width:32px; height:32px;">
+    </a>
+    <a href="https://facebook.com/kashmiridhaage" target="_blank" style="text-decoration:none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174848.png" alt="Facebook" style="width:32px; height:32px;">
+    </a>
+    <a href="https://youtube.com/@KashmiriDhaage" target="_blank" style="text-decoration:none;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" style="width:32px; height:32px;">
+    </a>
+  </div>
+
+  <!-- Copyright -->
+  <p style="font-size:0.9rem;">© <span id="year"></span> Kashmiri Dhaage. All Rights Reserved.</p>
+
+  <!-- Responsive Styling -->
+  <style>
+    @media(max-width:480px){
+      footer p { font-size:0.85rem; }
+      .social-icons {
+        gap:15px;
+      }
+      .social-icons img {
+        width:28px; height:28px;
+      }
+    }
+  </style>
+</footer>
+
+<!-- Script to auto-update year -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const yearSpan = document.getElementById("year");
+    if(yearSpan){ yearSpan.textContent = new Date().getFullYear(); }
+  });
+</script>

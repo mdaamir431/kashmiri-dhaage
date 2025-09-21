@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collections | Kashmiri Dhaage</title>
+
+<meta name="description" content="Explore Kashmiri Dhaage’s exclusive collections of luxury women’s ethnic wear — Launching Soon!">
+<meta name="keywords" content="Kashmiri Dhaage Collections, Women's Ethnic Wear, Launching Soon">
+<meta name="author" content="Kashmiri Dhaage">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+body { margin:0; font-family:'Poppins', sans-serif; background:#fffaf5; color:#222; }
+h1,h2,h3 { font-family:'Playfair Display', serif; margin-bottom:0.5rem; }
+a { text-decoration:none; }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* cover screen fully, crop minimal */
+  object-position: center; /* center the image */
+}
+.hero .overlay {
+  position: absolute;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.45);
+}
+.hero-content {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:2;
+  text-align:center;
+  max-width:700px;
+  padding:0 1rem;
+  color:#f8e8d8;
+}
+.hero-content h1 { font-size:3rem; margin-bottom:1rem; }
+.hero-content p { font-size:1.2rem; margin-bottom:2rem; }
+.btn-primary {
+  padding:0.8rem 2rem;
+  background:#800020;
+  color:#fff;
+  border-radius:30px;
+  transition:0.3s;
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  font-weight:500;
+}
+.btn-primary:hover { background:#c5a572; color:#111; }
+
+.launching-soon {
+  padding:6rem 2rem;
+  text-align:center;
+  background:#fdfaf6;
+}
+.launching-soon h2 { font-size:2.2rem; color:#800020; margin-bottom:1rem; }
+.launching-soon p { font-size:1.1rem; max-width:600px; margin:0 auto 2rem auto; line-height:1.7; }
+.launching-soon .badge {
+  display:inline-block;
+  background:#c5a356;
+  color:#fff;
+  padding:0.6rem 1.2rem;
+  border-radius:30px;
+  font-weight:600;
+  margin-bottom:1.5rem;
+}
+.btn-instagram {
+  padding:0.8rem 2rem;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  color:#fff;
+  border-radius:30px;
+  transition:0.3s;
+  text-decoration:none;
+  display:inline-flex;
+  align-items:center;
+  gap:0.5rem;
+  font-weight:500;
+}
+.btn-instagram img { width:20px; height:20px; }
+.btn-instagram:hover { transform:scale(1.05); filter:brightness(1.2); }
+
+@media(max-width:1024px){
+  .hero { height:70vh; }
+  .hero-content h1 { font-size:2.5rem; }
+  .hero-content p { font-size:1.1rem; }
+}
+@media(max-width:768px){
+  .hero { height:60vh; }
+  .hero-content h1 { font-size:2.2rem; }
+  .hero-content p { font-size:1rem; }
+  .btn-primary { padding:0.6rem 1.5rem; font-size:0.95rem; }
+  .btn-instagram { padding:0.6rem 1.5rem; font-size:0.95rem; }
+  .launching-soon h2 { font-size:1.8rem; }
+  .launching-soon p { font-size:1rem; }
+}
+@media(max-width:480px){
+  .hero { height:50vh; }
+  .hero-content h1 { font-size:1.8rem; }
+  .hero-content p { font-size:0.95rem; }
+  .btn-primary { padding:0.5rem 1.2rem; font-size:0.9rem; }
+  .btn-instagram { padding:0.5rem 1.2rem; font-size:0.9rem; }
+}
+</style>
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="hero">
+  <img src="https://www.kachydhaagy.com/cdn/shop/files/ZTArticle2-03.jpg?v=1749991301&width=823" alt="Luxury Women Ethnic Wear">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Our Collections</h1>
+    <p>Luxury Women’s Ethnic Wear — Launching Soon!</p>
+    <a href="/" class="btn-primary">Back to Home</a>
+  </div>
+</section>
+
+<section class="launching-soon">
+  <div class="badge">✨ Launching Soon ✨</div>
+  <h2>Our Signature Collections Are Coming Soon</h2>
+  <p>We are carefully crafting our exclusive collections — from embroidered anarkalis and shararas to premium lawn suits and festive wear. Stay tuned and be the first to explore our luxury ethnic wear.</p>
+  <a href="https://instagram.com/kashmiridhaageofficial" target="_blank" class="btn-instagram">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Follow on Instagram
+  </a>
+</section>
+
+<div id="footer"></div>
+
+<script src="../script.js"></script>
+</body>
+</html>

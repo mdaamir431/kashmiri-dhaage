@@ -1,0 +1,47 @@
+/* ==============================
+   Global Variables
+============================== */
+:root {
+  --light: #ffffff;
+  --dark: #1b1b1f;
+  --gold: #d4af37;
+  --muted: #555555;
+  --bg: #f8f8f8;
+  --transition: all 0.3s ease;
+}
+
+/* ==============================
+   Reset & Base Styles
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--dark);
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+  padding: 40px 20px;
+  background: #fafafa;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid #eee;
+}
+footer .socials a {
+  margin: 0 10px;
+  color: var(--dark);
+  text-decoration: none;
+  transition: var(--transition);
+}
+footer .socials a:hover {
+  color: var(--gold);
+}
