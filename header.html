@@ -117,9 +117,90 @@
       flex-wrap: nowrap;
     }
   }
+   /* Reset */
+  body { margin:0; font-family:'Poppins', sans-serif; }
+
+  /* Running Banner Fixed on Top */
+  .running-banner {
+    position: fixed;      /* Fixed at top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #800020;  /* Maroon / Red color */
+    color: #f8e8d8;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 0.6rem 0;
+    z-index: 9999;        /* Above all content */
+  }
+
+  /* Scrolling Wrapper */
+  .banner-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .scrolling {
+    display: inline-block;
+    padding-right: 5rem;
+    animation: scroll 20s linear infinite;
+  }
+
+  .scrolling span {
+    display: inline-block;
+    padding-right: 5rem;
+  }
+
+  /* Duplicate wrapper for seamless scroll */
+  .banner-text > .scrolling:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Add top padding to body so header/content not overlap banner */
+  body { padding-top: 2.5rem; } /* adjust to banner height */
+
+  /* Responsive */
+  @media(max-width:768px){
+    .running-banner { font-size: 1rem; padding: 0.5rem 0; }
+    body { padding-top: 2rem; }
+  }
+  @media(max-width:480px){
+    .running-banner { font-size: 0.85rem; padding: 0.4rem 0; }
+    body { padding-top: 1.8rem; }
+  }
 </style>
 </head>
 <body>
+  
+<!-- Running Banner -->
+<div class="running-banner">
+  <div class="banner-text">
+    <div class="scrolling">
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+    </div>
+    <div class="scrolling">
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+      <span>✨ Launching Soon ✨</span>
+    </div>
+  </div>
+</div>
 <header class="site-header">
   <div class="container">
     <h1 class="logo">
