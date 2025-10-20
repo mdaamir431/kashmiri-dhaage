@@ -19,7 +19,7 @@ We create luxury ethnic wear that blends tradition with modern style — perfect
 ---
 
 ## 📲 Connect with Us
-- Instagram: [@KashmiriDhaageOfficial](https://instagram.com/kashmiridhaageofficial)  
+- Instagram: [@KashmiriDhaageOfficial]("https://instagram.com/kashmiri_dhaage",)  
 - Facebook: [Kashmiri Dhaage](https://facebook.com/kashmiridhaage)  
 - YouTube: [Kashmiri Dhaage](https://youtube.com/@KashmiriDhaage)  
 
