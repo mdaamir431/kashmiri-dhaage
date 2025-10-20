@@ -3,185 +3,167 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kashmiri Dhaage</title>
+
+<!-- SEO Meta Tags -->
+<title>Kashmiri Dhaage – Premium Pakistani Ethnic Wear Online</title>
+<meta name="description" content="Shop luxury ethnic wear by Kashmiri Dhaage – embroidered anarkalis, shararas, lawn suits & chikankari kurtas. Free delivery in India.">
+<meta name="keywords" content="Kashmiri Dhaage, women's ethnic wear, anarkali suits, sharara suits, lawn suits, chikankari kurtas, embroidered dupattas, festive wear, party wear">
+<meta name="author" content="Kashmiri Dhaage">
+
+<!-- Open Graph / Social Meta -->
+<meta property="og:title" content="Kashmiri Dhaage – Premium Pakistani Ethnic Wear">
+<meta property="og:description" content="Explore luxury women's ethnic wear – embroidered anarkalis, shararas, lawn suits & chikankari kurtas.">
+<meta property="og:image" content="https://www.kachydhaagy.com/cdn/shop/files/ZTArticle2-03.jpg?v=1749991301&width=823">
+<meta property="og:url" content="https://kashmiridhaage.com">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kashmiri Dhaage – Premium Pakistani Ethnic Wear">
+<meta name="twitter:description" content="Luxury ethnic wear for women – embroidered anarkalis, shararas, lawn suits & chikankari kurtas.">
+<meta name="twitter:image" content="https://www.kachydhaagy.com/cdn/shop/files/ZTArticle2-03.jpg?v=1749991301&width=823">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
 <style>
-  :root {
-    --light: #ffffff;
-    --dark: #111111;
-    --gold: #c5a356;
-    --transition: all 0.3s ease;
-  }
+:root {
+  --light: #ffffff;
+  --dark: #111111;
+  --gold: #c5a356;
+  --maroon: #800020;
+  --transition: all 0.3s ease;
+}
 
-  /* ==============================
-     Header
-  ============================== */
-  .site-header {
-    background: var(--light);
-    padding: 18px 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
+body { margin:0; font-family:'Poppins', sans-serif; padding-top:2.5rem; background:#fffaf5; color:#222; }
 
-  .site-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    position: relative;
-  }
+/* ============================== Header ============================== */
+.site-header {
+  background: var(--light);
+  padding: 18px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+.site-header .logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--dark);
+  letter-spacing: 1.2px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.site-header .logo:hover { color: var(--gold); }
 
-  /* Logo */
-  .site-header .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--dark);
-    letter-spacing: 1.2px;
-    cursor: pointer;
-    transition: var(--transition);
-  }
-  .site-header .logo:hover {
-    color: var(--gold);
-  }
+/* Navigation */
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--dark);
+  padding: 6px 0;
+  position: relative;
+  transition: var(--transition);
+  letter-spacing: 0.5px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: var(--gold);
+  transition: var(--transition);
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--gold); }
+.nav-links a.active::after { width: 100%; }
 
-  /* Navigation */
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--dark);
+  transition: var(--transition);
+  z-index: 1100;
+}
+.menu-toggle:hover { color: var(--gold); }
+.menu-toggle::before { content: "☰"; }
+.menu-toggle.open::before { content: "✖"; }
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
   .nav-links {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
-  .nav-links a {
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--dark);
-    padding: 6px 0;
-    position: relative;
-    transition: var(--transition);
-    letter-spacing: 0.5px;
-  }
-  .nav-links a::after {
-    content: '';
     position: absolute;
-    width: 0;
-    height: 2px;
-    left: 0;
-    bottom: -4px;
-    background-color: var(--gold);
-    transition: var(--transition);
-  }
-  .nav-links a:hover { color: var(--gold); }
-  .nav-links a:hover::after { width: 100%; }
-  .nav-links a.active { color: var(--gold); }
-  .nav-links a.active::after { width: 100%; }
-
-  /* Hamburger Menu */
-  .menu-toggle {
+    top: 100%;
+    right: 0;
+    flex-direction: column;
+    gap: 15px;
+    width: 220px;
     display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: var(--dark);
-    transition: var(--transition);
-    z-index: 1100;
+    background: var(--light);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
-  .menu-toggle:hover { color: var(--gold); }
-  .menu-toggle::before { content: "☰"; }
-  .menu-toggle.open::before { content: "✖"; }
+  .nav-links.active { display: flex; }
+  .site-header .container { flex-wrap: nowrap; }
+}
 
-  /* Responsive Navigation */
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-    .nav-links {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      flex-direction: column;
-      gap: 15px;
-      width: 220px;
-      display: none;
-      background: var(--light);
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .nav-links.active { display: flex; }
+/* ============================== Running Banner ============================== */
+.running-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--maroon);
+  color: #f8e8d8;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 0.6rem 0;
+  z-index: 9999;
+}
+.banner-text { display: inline-block; white-space: nowrap; position: relative; }
+.scrolling { display: inline-block; padding-right: 5rem; animation: scroll 20s linear infinite; }
+.scrolling span { display: inline-block; padding-right: 5rem; }
+.banner-text > .scrolling:nth-child(2) { position: absolute; top:0; left:100%; }
+@keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-    /* ensure logo stays left, hamburger right */
-    .site-header .container {
-      flex-wrap: nowrap;
-    }
-  }
-   /* Reset */
-  body { margin:0; font-family:'Poppins', sans-serif; }
-
-  /* Running Banner Fixed on Top */
-  .running-banner {
-    position: fixed;      /* Fixed at top */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #800020;  /* Maroon / Red color */
-    color: #f8e8d8;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 0.6rem 0;
-    z-index: 9999;        /* Above all content */
-  }
-
-  /* Scrolling Wrapper */
-  .banner-text {
-    display: inline-block;
-    white-space: nowrap;
-    position: relative;
-  }
-
-  .scrolling {
-    display: inline-block;
-    padding-right: 5rem;
-    animation: scroll 20s linear infinite;
-  }
-
-  .scrolling span {
-    display: inline-block;
-    padding-right: 5rem;
-  }
-
-  /* Duplicate wrapper for seamless scroll */
-  .banner-text > .scrolling:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 100%;
-  }
-
-  @keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
-
-  /* Add top padding to body so header/content not overlap banner */
-  body { padding-top: 2.5rem; } /* adjust to banner height */
-
-  /* Responsive */
-  @media(max-width:768px){
-    .running-banner { font-size: 1rem; padding: 0.5rem 0; }
-    body { padding-top: 2rem; }
-  }
-  @media(max-width:480px){
-    .running-banner { font-size: 0.85rem; padding: 0.4rem 0; }
-    body { padding-top: 1.8rem; }
-  }
+@media(max-width:768px){
+  .running-banner { font-size: 1rem; padding: 0.5rem 0; }
+  body { padding-top: 2rem; }
+}
+@media(max-width:480px){
+  .running-banner { font-size: 0.85rem; padding: 0.4rem 0; }
+  body { padding-top: 1.8rem; }
+}
 </style>
 </head>
 <body>
-  
+
 <!-- Running Banner -->
 <div class="running-banner">
   <div class="banner-text">
@@ -201,37 +183,37 @@
     </div>
   </div>
 </div>
+
+<!-- Header -->
 <header class="site-header">
   <div class="container">
     <h1 class="logo">
       <a href="/" style="text-decoration:none; color:inherit;">Kashmiri Dhaage</a>
     </h1>
 
-    <!-- Hamburger button -->
     <div class="menu-toggle" id="menu-toggle"></div>
 
-    <!-- Navigation links -->
     <nav class="nav-links" id="nav-links">
       <a href="/" class="nav-item active">Home</a>
       <a href="/about/" class="nav-item">About</a>
       <a href="/collections/" class="nav-item">Collections</a>
-      <a href="https://instagram.com/kashmiridhaageofficial" target="_blank" rel="noopener" class="nav-item">Instagram</a>
+      <a href="https://instagram.com/kashmiri_dhaage" target="_blank" rel="noopener" class="nav-item">Instagram</a>
     </nav>
   </div>
 </header>
 
+<!-- JS -->
 <script>
 document.addEventListener("DOMContentLoaded", () => {
+  // Hamburger menu toggle
   const menuToggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
-
   if (menuToggle && navLinks) {
     menuToggle.addEventListener("click", () => {
       navLinks.classList.toggle("active");
       menuToggle.classList.toggle("open");
     });
-
-    navLinks.querySelectorAll("a").forEach((link) => {
+    navLinks.querySelectorAll("a").forEach(link => {
       link.addEventListener("click", () => {
         if (navLinks.classList.contains("active")) {
           navLinks.classList.remove("active");
@@ -241,6 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Active link based on URL
   const links = document.querySelectorAll(".nav-links a");
   let currentPath = window.location.pathname.replace(/\/$/, "") || "/";
   links.forEach(link => link.classList.remove("active"));
@@ -249,6 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if(currentPath === linkPath) link.classList.add("active");
   });
 
+  // Logo click
   const logo = document.querySelector(".logo a");
   if(logo){
     logo.addEventListener("click", e => {
@@ -258,5 +242,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 </script>
+
 </body>
 </html>
